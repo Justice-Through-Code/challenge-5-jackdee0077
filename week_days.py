@@ -64,7 +64,7 @@ def temp_by_day_continuous():
     # 4 TODO: Write a program that asks the user what temperature it is outside. While the temperature is below 65,
     # tell the user to wear a sweater. Once the temperature is over 65, stop looping, and tell the user that
     # Spring has sprung!
-    for day in days
+    for day in days:
         temp=int(input('what is the temprature'))
         if temp <50:
          print('brr,put on a jacket')
@@ -77,7 +77,7 @@ def temp_by_day_continuous():
 def temp_by_daycontinous():
 
     temp=int(input('what is the temprature outside?'))
-    while temp<65
+    while temp<65:
         print=('wear a sweater') 
         temp=int(input("what is the temprature outside?"))
 
