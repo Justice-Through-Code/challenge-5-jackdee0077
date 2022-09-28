@@ -5,11 +5,11 @@ days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 def day_of_week():
     # Let's start simple, and build up from there.
     # 1.1 TODO: Write a for loop that prints out each day in the `days` variable above.
-    for day in days
+    for day in days:
         print(day)
     # 1.2 TODO: Write another for loop that does the same thing, but this time use the range function
-    for day in range(len(days)):
-        print(day[i])
+    for i in range(len(days)):
+        print(days[i])
 
 def favorite_activities():
     # 2.1 TODO: Now, in a for loop, instead of just printing out the day,
@@ -18,11 +18,16 @@ def favorite_activities():
     favorite_thing=[]
     # We should keep track of the user's favorite things to do so that we can print them out all together.
     # 2.2 TODO: ABOVE your for loop, create a new empty list to hold the user's favorite activities.
-    favorite_thing=input(f'what is your favorite thing to do on {day}?')
+    for day in days:
+        favorite_thing=input(f'what is your favorite thing to do on {day}?')
+        favorite_thing.apend(favorite_thing)
+
     # 2.3 TODO: Now, back in your for loop, append each of the user's answers into your new list.
     # AFTER your loop, print out the list to check if it got populated correctly.
-    favorite_thing.apend(favorite_thing)
+    print(favorite_thing)
     # 2.4: After the code you've written so far, let's create a new for loop.
+    for i in range(len(favorite_thing)):
+        print(f'On {days[i]}s, your favorite activity is to {favorite_thing[i]}.')
     # As an example, let's say the user's favorite thing to do on Mondays is plan their week.
     #  This time, we want the output to be something like this:
     # f'On Mondays, your favorite activity is to plan your week.'
